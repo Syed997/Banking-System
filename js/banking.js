@@ -7,3 +7,15 @@ document.getElementById('deposite_btn').addEventListener('click', function(){
     document.getElementById('deposite_input').value = '';
 })
 
+document.getElementById('withdraw_btn').addEventListener('click', function(){
+    const withdrawInput = document.getElementById('withdraw_input').value;
+    const totalWithdraw = document.getElementById('total_withdraw');
+    const totalBalance = document.getElementById('total_balance');
+    totalWithdraw.innerText = parseFloat(totalWithdraw.innerText) + parseFloat(withdrawInput);
+    totalBalance.innerText = parseFloat(totalBalance.innerText) - parseFloat(withdrawInput);
+    document.getElementById('withdraw_input').value = '';
+})
+
+function logOut(){
+    window.location.href = 'index.html';
+}

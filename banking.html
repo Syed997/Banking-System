@@ -19,7 +19,7 @@
             </div>
             <div class="bg-green-400 mx-8	my-4 px-16 py-8 rounded-xl	">
                 <h1 class="text-4xl">Withdraw</h1>
-                <h1 class="text-5xl">$00</h1>
+                <h1 class="text-5xl">$<span id="total_withdraw">00</span></h1>
             </div>
             <div class="bg-cyan-500 mx-8	my-4 px-16 py-8 rounded-xl	">
                 <h1 class="text-4xl">Balance</h1>
@@ -42,6 +42,9 @@
                 <button id="withdraw_btn" class="bg-sky-500 px-4 py-2 rounded-md font-bold">Withdraw</button>
             </div>
         </div>
+    </section>
+    <section>
+        <button onclick="logOut()" class="bg-fuchsia-600 px-4 py-2 rounded-md font-bold mx-44 my-8">Log out</button>
     </section>
     <script src="js/banking.js"></script>
 </body>
