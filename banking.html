@@ -15,7 +15,7 @@
         <div class="grid grid-cols-3 w-3/4 mx-auto">
             <div class="bg-yellow-500 mx-8	my-4 px-16 py-8 rounded-xl	">
                 <h1 class="text-4xl">Deposite</h1>
-                <h1 class="text-5xl">$00</h1>
+                <h1 class="text-5xl">$<span id="total_deposite">00</span></h1>
             </div>
             <div class="bg-green-400 mx-8	my-4 px-16 py-8 rounded-xl	">
                 <h1 class="text-4xl">Withdraw</h1>
@@ -23,20 +23,26 @@
             </div>
             <div class="bg-cyan-500 mx-8	my-4 px-16 py-8 rounded-xl	">
                 <h1 class="text-4xl">Balance</h1>
-                <h1 class="text-5xl">$00</h1>
+                <h1 class="text-5xl">$ <span id="total_balance">1290</span></h1>
             </div>
         </div>
         
 
     </section>
     <section>
-        <div class="grid grid-cols-2 w-3/4 mx-auto">
-            <div class="">
-                <h1>Please Deposite</h1>
-                <input type="text" placeholder="$ amount you want to deposite">
-                <button>Deposite</button>
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8">
+            <div class="bg-green-100 text-center p-12 rounded-md">
+                <h1 class="text-3xl ">Please Deposite</h1>
+                <input id="deposite_input" class="mx-auto block border-inherit rounded-md border-2 w-64 my-4 px-4 py-1" type="text" placeholder="$ amount you want to deposite">
+                <button id="deposite_btn" class="bg-orange-700 px-4 py-2 rounded-md font-bold">Deposite</button>
+            </div>
+            <div class="bg-green-100 text-center p-12 rounded-md">
+                <h1 class="text-3xl ">Withdraw</h1>
+                <input id="withdraw_input" class="mx-auto block border-inherit rounded-md border-2 w-64 my-4 px-4 py-1" type="text" placeholder="$ amount you want to withdraw">
+                <button id="withdraw_btn" class="bg-sky-500 px-4 py-2 rounded-md font-bold">Withdraw</button>
             </div>
         </div>
     </section>
+    <script src="js/banking.js"></script>
 </body>
 </html>
